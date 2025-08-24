@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<style>
+  .search{
+	border:none;
+	position:relative;
+	top:20px;
+}
+  
+</style>
+
+<body>
+ 
+   <!-- main img section starts    -->
+
+   <section class="main-img">
+    <div class="navb d-flex">
+      <div>
+        <h5 class="text-light fw-bold ps-3 pt-3 adv">Adventure</h5>
+      </div>
+      <div class="d-flex d-lg-none">
+        <div class="menu-icon2 ">
+            <a class=" menu-icon pb-3" href=""><i class="bi bi-list"></i></a>
+        </div>
+        <div>
+            <p class="menu-name pe-3 pt-3 ms-2">MENU</p>
+        </div>
+      </div>
+
+    <!--    <div>
+        <ul class="d-flex gap-5 nav-menu">
+               <li class="text-light"><a class="text-light" href="./webapp/index.html">Home</a></li>
+               <li class="text-light"><a class="text-light" href="./webapp/about.html">About</a></li>
+               <li class="text-light"><a class="text-light" href="places.html">Places</a></li>
+               <li class="text-light"><a class="text-light" href="hotels.html">Hotels</a></li>
+               <li class="text-light"><a class="text-light" href="contact.html">Contact</a></li>
+        </ul>
+      </div>-->
+      
+      <div>
+       <ul class="d-flex gap-5 nav-menu">
+          <li class="text-light"><a class="text-light" href="index.html">Home</a></li>
+          <li class="text-light"><a class="text-light" href="about.jsp">About</a></li>
+          <li class="text-light"><a class="text-light" href="places.jsp">places</a></li>
+          <li class="text-light"><a class="text-light" href="hotels.jsp">Hotels</a></li>
+          <li class="text-light"><a class="text-light" href="contact.jsp">Contact</a></li>
+       
+       </ul>
+          
+      </div>
+      
+
+          <!-- login page -->
+          <div class="dropdown ">
+            <button class="btn border log text-light border-light fs-6 fw-bold dropdown-toggle" type="button" id="loginDropdown" data-bs-toggle="dropdown" >
+                Login
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                <li><a class="dropdown-item text-dark fw-bold" id="customerLogin" href="Login.jsp">Customer Login</a></li>
+                <li><a class="dropdown-item text-dark fw-bold" id="adminLogin" href="Admin.jsp">Admin Login</a></li>
+            </ul>
+        </div>
+    
+          
+          <!-- Signup page -->
+          <a class="fw-bold login-btn text-center rounded-2 pt-lg-1" id="btn2" href="Signup.jsp" class="sign-btn">Sign Up</a>
+     
+
+    </div>
+    <h1 class=" main-h1 text-light">Discover</h1>
+    <h1 class=" main-h2 text-light ms-3 me-3">A new Place</h1>
+        <p class="text-center main-p ms-3 me-3 pt-2">Find great places to stay, eat, shop, or visit from local experts</p>
+
+        
+   </section>
+
+   
+   <!--  <div class="white-box d-none d-md-block d-lg-block">
+    <div class="d-flex gap-5 pt-md-4 ps-md-5">
+        <h6 class="white-1">From</h6>
+        <h6 class="white-2">Where</h6>
+        <h6 class="white-3">Check In</h6>
+        <h6 class="white-4">Check Out</h6>
+        <h6 class="white-5">Travelers</h6>
+    </div>
+
+   <div class="d-flex pt-md-2 ps-md-5">
+    <div class="whitebox-1 d-flex pt-2 ps-2">
+       <a class="box-icon" href=""><i class="bi bi-crosshair"></i></a>
+       <p class="ps-1 text-secondary">From</p>
+    </div>
+
+    <div class="whitebox-2 d-flex pt-2 ps-2 ms-md-3">
+       <a class="box-icon" href=""><i class="bi bi-geo-alt-fill"></i></a>
+       <p class="text-secondary ps-2 d-lg-flex">Whe<span class="d-none d-lg-block">re</span></p>
+    </div>
+
+    <div class="whitebox-3 d-flex pt-2 ps-2 ms-md-4">
+        <a class="box-icon" href=""><i class="bi bi-geo-alt-fill"></i></a>
+       
+        <p class="text-secondary ps-2 d-lg-flex">Che<span class="d-none d-lg-block">ckIn</span></p>
+       
+    </div>
+
+    <div class="whitebox-4 d-flex pt-2 ps-2 ms-md-5">
+        <a class="box-icon" href=""><i class="bi bi-geo-alt-fill"></i></a>
+        <p class="text-secondary ps-2">From</p>
+    </div>
+
+    <div class="whitebox-5 d-flex pt-2 ps-2 ms-md-5">
+        <select class="border-none" name="" id="">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+            <option value="1">5</option>
+         </select>
+    </div>
+
+    <div class="yellowbox">
+       <p class="search text-light pt-3 ps-2">Search</p>
+    </div>
+    
+   </div>
+     
+   </div>-->
+   
+   
+   
+       <!--  Backend code  -->
+       
+       <section id="search">
+          <form action="SearchResults.jsp" method="POST">
+    <div class="white-box d-none d-md-block d-lg-block">
+        <div class="d-flex gap-5 pt-md-4 ps-md-5">
+            <h6 class="white-1">From</h6>
+            <h6 class="white-2">Where</h6>
+            <h6 class="white-3">Check In</h6>
+            <h6 class="white-4">Check Out</h6>
+            <h6 class="white-5">Travelers</h6>
+        </div>
+
+        <div class="d-flex pt-md-2 ps-md-5">
+            <!-- From Location Input -->
+            <div class=" d-flex pt-2 ps-2">
+                
+                <input type="text" name="fromLocation" id="from" class="ps-1 text-secondary" placeholder="From" required>
+            </div>
+
+            <!-- Where Location Input -->
+            <div class="d-flex pt-2 ps-2 ms-md-3">
+                
+                <input type="text" name="toLocation" id="to" class="ps-2 d-lg-flex" placeholder="Where" required>
+            </div>
+
+            <!-- Check-In Date -->
+            <div class=" d-flex pt-2 ps-2 ms-md-4">
+                
+                <input type="date" name="checkInDate" class="ps-2 d-lg-flex" required>
+            </div>
+
+            <!-- Check-Out Date -->
+            <div class=" d-flex pt-2 ps-2 ms-md-5">
+               
+                <input type="date" name="checkOutDate" class="ps-2" required>
+            </div>
+
+            <!-- Number of Travelers -->
+            <div class="whitebox-5 d-flex pt-2 ps-2 ms-md-5">
+                <select name="travelers" class="border-none" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <!-- Search Button -->
+            <div class="">
+                <button type="submit" class="search yellowbox pt-lg-2  text-light pt-3 ps-2"><a class="text-light" href="SearchResults.jsp">Search</a></button>
+            </div>
+        </div>
+    </div>
+</form>
+</section>
+
+
+
+
+
+       
+   
+
+     <!-- graybox section starts -->
+
+   <section class="graybox d-md-flex d-lg-flex">
+    <div class="container gray-1">
+      <h2 class="gap-2 d-flex"><span class="one mt-md-1 mt-lg-2">01</span>Travel</h2>
+      <p class="one-p">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    </div>
+
+    <div class="container gray-2">
+      <h2 class="gap-2 d-flex"><span class="two mt-md-1 mt-lg-2">02</span>Experience</h2>
+      <p class="two-p">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    </div>
+
+    <div class="container gray-3">
+      <h2 class="gap-2 d-flex"><span class="three mt-md-1 mt-lg-2">03</span>Relax</h2>
+      <p class="three-p">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    </div>
+
+   </section>
+
+   <!-- vacation section strats -->
+    <h2 class="vac-h2 fw-bold text-center pt-5">See our latest vacation ideas</h2>
+
+    <div class="container mt-5 d-md-flex d-lg-flex vacation">
+
+      <div class="vac-1 me-2 mt-md-4 me-md-4">
+        <div class="vac-div1 text-center pt-3 container">
+          <h2 class="group fw-bold ">Beachfront Scape</h2>
+        </div>
+      </div>
+
+      <div class="vac-2 me-md-2 mt-4 me-md-4">
+        <div class="vac-div2 text-center pt-3 container">
+          <h2 class="group fw-bold ">Group Holidays</h2>
+        </div>
+      </div>
+
+      <div class="vac-3 mt-4">
+        <div class="vac-div3 text-center pt-3 container">
+          <h2 class="group fw-bold ">City Breaks</h2>
+        </div>
+      </div>
+    </div>
+
+      <!-- Travel section starts -->
+
+    <section class="d-md-flex d-lg-flex">
+      <div class="travelimg">
+        <img  class="travel-img1" src="Images/illustration/about (1).jpg" alt="">
+      </div>
+
+      <div class="ms-3 me-5 mt-4">
+        <h2 class="travel-h2 fw-bold">The Best Travel Agency</h2>
+
+        <p class="travel-p mt-4">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+      </div>
+    </section>
+
+       <!-- blue section starts -->
+       <section class="blue-main mt-5 d-md-flex d-lg-flex">
+           <div class="blue-1 container">
+            <a class="ship" href=""><i class="fa-solid fa-sailboat"></i></a>
+            <h2 class="blue-h1">Special Activities</h2>
+            <p class="blue-p1">A small river named Duden flows by their place and supplies.</p>
+           </div>
+           
+           <div class="round container">
+            <a href=""><i class="bi bi-globe-americas"></i></a>
+            <h2 class="blue-h2">Travel Arrangements</h2>
+            <p class="blue-p2">A small river named Duden flows by their place and supplies.</p>
+           </div>
+
+           <div class="compass container">
+            <a href=""><i class="bi bi-compass"></i></a>
+            <h2 class="blue-h3">Private Guide</h2>
+            <p class="blue-p3">A small river named Duden flows by their place and supplies.</p>
+           </div>
+
+           <div class="map container">
+            <a href=""><i class="bi bi-map-fill"></i></a>
+            <h2 class="blue-h4">Location Manager</h2>
+            <p class="blue-p4">A small river named Duden flows by their place and supplies.</p>
+           </div>
+
+          </section>
+
+          <!-- Destination section starts -->
+
+          <section class="dest-main">
+
+           <div class="container">
+            <h2 class="dest-h2 ms-5 pt-5">Top Destination</h2>
+
+           <div class="d-lg-flex">
+
+            <div class="dist-1 mt-5 ms-2">
+              <h2 class="text-light ch-h2 fw-bold">China</h2>
+              <p class="text-light ch-p">20 Tours</p>
+              <p class="text-light ch-p2">15 Places</p>
+            </div>
+
+            <div class="dist-2 ms-2 mt-4">
+              <h2 class="text-light ve-h2 fw-bold">VenuZuala</h2>
+              <p class="text-light ve-p">12 Tours</p>
+              <p class="text-light ve-p2">9 Places</p>
+            </div>
+
+           </div>
+
+           <div class="d-lg-flex">
+
+            <div class="dist-3 ms-2 mt-4">
+              <h2 class="text-light br-h2 fw-bold">Brazil</h2>
+              <p class="text-light br-p">25 Tours</p>
+              <p class="text-light br-p2">10 Places</p>
+            </div>
+
+            <div class="dist-4 ms-2 mt-4">
+              <h2 class="text-light au-h2 fw-bold">Australia</h2>
+              <p class="text-light au-p">18 Tours</p>
+              <p class="text-light au-p2">9 Places</p>
+            </div>
+
+            <div class="dist-5 ms-2 mt-4">
+              <h2 class="text-light ne-h2 fw-bold">Netharland</h2>
+              <p class="text-light ne-p">14 Tours</p>
+              <p class="text-light ne-p2">12 Places</p>
+            </div>
+
+           </div>
+
+            <div class="dist-6 ms-2 mt-4">
+              <h2 class="text-light tu-h2 fw-bold">Turkey</h2>
+              <p class="text-light tu-p">14 Tours</p>
+              <p class="text-light tu-p2">6 Places</p>
+            </div>
+
+           </div>
+
+          </section>
+         
+          <!-- package section starts -->
+
+         <section class="pack-main">
+   
+          <h2 class="pack-h2 pt-5 mt-5 ms-5 mb-md-5">Special Packages</h2>
+
+            <!-- pack-1 -->
+
+            <div class="d-lg-flex">
+
+              <div class="package">
+                <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p1.jpg" alt="">
+    
+                <div class="pack-1 ms-4 container">
+                   <div class="d-flex justify-content-between pt-4">
+                    <h4>Italy</h4>
+                    
+                   </div>
+                   <hr>
+    
+                   <div class="d-flex">
+                   <div class="d-flex">
+                    <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                    <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+                   </div>
+    
+                   <div class="d-flex pack-flex">
+                    <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+                    <p class="text-secondary five">5 <span class="star">Star</span></p>
+                   </div>
+    
+                   </div>
+    
+                   <div class="d-flex">
+                    <div class="d-flex pe-5">
+                     <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                     <p class="text-secondary">Tranportation Facilities</p>
+                    </div>
+     
+                    <div class="d-flex">
+                     <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                     <p class="text-secondary pe-5">Food</p>
+                    </div>
+     
+                    </div>
+    
+                    <div class="d-flex">
+                      <div class="d-flex gap-1">
+                        <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                        <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                        <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                        <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                        <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                       
+                        <p class="text-secondary review">Review</p>
+                      </div>
+                         <p class="text-secondary pe-5">2544</p>
+                    </div>
+    
+                    <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+                </div>
+    
+              </div>
+              
+              <!-- pack-2 -->
+               
+              <div class="package">
+                <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p1.jpg" alt="">
+    
+              <div class="pack-1 ms-4 container">
+                <div class="d-flex justify-content-between pt-4">
+                 <h4>England</h4>
+                 
+                </div>
+                <hr>
+    
+                <div class="d-flex">
+                <div class="d-flex">
+                 <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+                </div>
+    
+                <div class="d-flex pack-flex">
+                 <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary five">5 <span class="star">Star</span></p>
+                </div>
+    
+                </div>
+    
+                <div class="d-flex">
+                 <div class="d-flex pe-5">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary">Tranportation Facilities</p>
+                 </div>
+    
+                 <div class="d-flex">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary pe-5">Food</p>
+                 </div>
+    
+                 </div>
+    
+                 <div class="d-flex">
+                   <div class="d-flex gap-1">
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                    
+                     <p class="text-secondary review">Review</p>
+                   </div>
+                      <p class="text-secondary pe-5">2544</p>
+                 </div>
+    
+                 <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+             </div>
+    
+           </div>
+              
+    
+           <!-- pack-3 -->
+    
+           <div class="package">
+            <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p3.jpg" alt="">
+    
+           <div class="pack-1 ms-4 container">
+            <div class="d-flex justify-content-between pt-4">
+             <h4>France</h4>
+            
+            </div>
+            <hr>
+    
+            <div class="d-flex">
+            <div class="d-flex">
+             <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+             <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+            </div>
+    
+            <div class="d-flex pack-flex">
+             <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+             <p class="text-secondary five">5 <span class="star">Star</span></p>
+            </div>
+    
+            </div>
+    
+            <div class="d-flex">
+             <div class="d-flex pe-5">
+              <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+              <p class="text-secondary">Tranportation Facilities</p>
+             </div>
+    
+             <div class="d-flex">
+              <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+              <p class="text-secondary pe-5">Food</p>
+             </div>
+    
+             </div>
+    
+             <div class="d-flex">
+               <div class="d-flex gap-1">
+                 <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                 <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                 <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                 <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                 <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                
+                 <p class="text-secondary review">Review</p>
+               </div>
+                  <p class="text-secondary pe-5">2544</p>
+             </div>
+    
+              <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+         </div>
+    
+       </div>
+             
+
+            </div>
+
+         <!-- pack-4 -->
+             
+           <div class="d-lg-flex">
+
+            <div class="package">
+              <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p4.jpg" alt="">
+    
+             <div class="pack-1 ms-4 container">
+              <div class="d-flex justify-content-between pt-4">
+               <h4>India</h4>
+               
+              </div>
+              <hr>
+    
+              <div class="d-flex">
+              <div class="d-flex">
+               <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+               <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+              </div>
+    
+              <div class="d-flex pack-flex">
+               <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+               <p class="text-secondary five">5 <span class="star">Star</span></p>
+              </div>
+    
+              </div>
+    
+              <div class="d-flex">
+               <div class="d-flex pe-5">
+                <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                <p class="text-secondary">Tranportation Facilities</p>
+               </div>
+    
+               <div class="d-flex">
+                <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                <p class="text-secondary pe-5">Food</p>
+               </div>
+    
+               </div>
+    
+               <div class="d-flex">
+                 <div class="d-flex gap-1">
+                   <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                   <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                   <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                   <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                   <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                  
+                   <p class="text-secondary review">Review</p>
+                 </div>
+                    <p class="text-secondary pe-5">2544</p>
+               </div>
+    
+               <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+           </div>
+    
+         </div>
+              
+    
+              <!-- pack-5 -->
+               
+              <div class="package">
+                <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p5.jpg" alt="">
+    
+              <div class="pack-1 ms-4 container">
+                <div class="d-flex justify-content-between pt-4">
+                 <h4>Spain</h4>
+                 
+                </div>
+                <hr>
+    
+                <div class="d-flex">
+                <div class="d-flex">
+                 <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+                </div>
+    
+                <div class="d-flex pack-flex">
+                 <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary five">5 <span class="star">Star</span></p>
+                </div>
+    
+                </div>
+    
+                <div class="d-flex">
+                 <div class="d-flex pe-5">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary">Tranportation Facilities</p>
+                 </div>
+    
+                 <div class="d-flex">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary pe-5">Food</p>
+                 </div>
+    
+                 </div>
+    
+                 <div class="d-flex">
+                   <div class="d-flex gap-1">
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                    
+                     <p class="text-secondary review">Review</p>
+                   </div>
+                      <p class="text-secondary pe-5">2544</p>
+                 </div>
+    
+                  <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+             </div>
+    
+           </div>
+     
+    
+              <!-- pack-6 -->
+    
+              <div class="package">
+                <img class="pack-img1 ms-4 mt-5" src="Images/illustration/p1.jpg" alt="">     
+    
+              <div class="pack-1 ms-4 container">
+                <div class="d-flex justify-content-between pt-4">
+                 <h4>Thailand</h4>
+                  	
+                </div>
+                <hr>
+    
+                <div class="d-flex">
+                <div class="d-flex">
+                 <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary">5 Days 6 Nights Accomodation</p>
+                </div>
+    
+                <div class="d-flex pack-flex">
+                 <a class="text-secondary five" href=""><i class="bi bi-chevron-right"></i></a>
+                 <p class="text-secondary five">5 <span class="star">Star</span></p>
+                </div>
+    
+                </div>
+    
+                <div class="d-flex">
+                 <div class="d-flex pe-5">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary">Tranportation Facilities</p>
+                 </div>
+    
+                 <div class="d-flex">
+                  <a class="text-secondary" href=""><i class="bi bi-chevron-right"></i></a>
+                  <p class="text-secondary pe-5">Food</p>
+                 </div>
+    
+                 </div>
+    
+                 <div class="d-flex">
+                   <div class="d-flex gap-1">
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                     <a class="star-1" href=""><i class="bi bi-star-fill"></i></a>
+                    
+                     <p class="text-secondary review">Review</p>
+                   </div>
+                      <p class="text-secondary pe-5">2544</p>
+                 </div>
+    
+                  <button class="button mt-5 rounded-3 text-light ms-3" type="button"><a class="text-light" href="#search">Book Now</a></button>
+             </div>
+    
+           </div>
+
+           </div>
+
+
+         </section>
+
+
+            <!-- Hotel section starts -->
+
+            <section>
+                    
+              <h2 class="text-center mb-5">Popular Hotels</h2>
+
+             
+              <section class="d-lg-flex">
+
+                <!-- 1 starts -->
+             <div class="d-md-flex">
+          
+              <div class="container">
+                <img class="hotel-img1" src="Images/illustration/hotel-1 (1).jpg" alt="">
+               </div>
+  
+               <div class="hotel-box1 container">
+                <h4 class="orleans mt-3">New Orleans, Hotel</h4>
+                <div class="d-flex gap-2 mt-3">
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star"></i></a>
+  
+                  <p class="text-secondary">8 Rating</p>
+                </div>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               </div>
+
+             </div>
+              
+             <!-- 2 starts -->
+             <div class="d-md-flex mt-md-3 hot-2">
+          
+              <div class="container">
+                <img class="hotel-img1" src="Images/illustration/hotel-2 (1).jpg" alt="">
+               </div>
+  
+               <div class="hotel-box1 container">
+                <h4 class="orleans mt-3">New Orleans, Hotel</h4>
+                <div class="d-flex gap-2 mt-3">
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star"></i></a>
+  
+                  <p class="text-secondary">8 Rating</p>
+                </div>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               </div>
+
+             </div>
+              
+
+              </section>
+
+             
+           <section class="d-lg-flex">
+
+                 <!-- 3 starts -->
+             <div class="d-md-flex mt-md-3">
+          
+              <div class="container">
+                <img class="hotel-img1" src="Images/illustration/hotel-3 (1).jpg" alt="">
+               </div>
+  
+               <div class="hotel-box1 container">
+                <h4 class="orleans mt-3">New Orleans, Hotel</h4>
+                <div class="d-flex gap-2 mt-3">
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star"></i></a>
+  
+                  <p class="text-secondary">8 Rating</p>
+                </div>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               </div>
+
+             </div>
+              
+             <!-- 4 starts -->
+             <div class="d-md-flex mt-md-3 hot-2 mb-lg-4">
+          
+              <div class="container">
+                <img class="hotel-img1" src="Images/illustration/hotel-4 (1).jpg" alt="">
+               </div>
+  
+               <div class="hotel-box1 container">
+                <h4 class="orleans mt-3">New Orleans, Hotel</h4>
+                <div class="d-flex gap-2 mt-3">
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star"></i></a>
+  
+                  <p class="text-secondary">8 Rating</p>
+                </div>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               </div>
+
+             </div>
+
+           </section>
+              
+             <!-- 5 starts -->
+             <div class="d-md-flex mt-md-3 mb-md-4 d-lg-none">
+          
+              <div class="container">
+                <img class="hotel-img1" src="Images/illustration/hotel-5 (1).jpg" alt="">
+               </div>
+  
+               <div class="hotel-box1 container">
+                <h4 class="orleans mt-3">New Orleans, Hotel</h4>
+                <div class="d-flex gap-2 mt-3">
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star-fill"></i></a>
+                  <a class="star-2" href=""><i class="bi bi-star"></i></a>
+  
+                  <p class="text-secondary">8 Rating</p>
+                </div>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+               </div>
+
+             </div>
+              
+
+            </section>
+
+         <!-- Footer section starts -->
+
+         <section class="footer d-md-flex d-lg-flex pt-lg-5">
+          
+          <div class="advn ms-md-3">
+          
+            <h3 class="text-light container foot-h2">Adventure</h3>
+            <p class=" foot-h3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+
+          </div>
+
+          <div class="me-md-5 infn">
+
+              <h3 class="text-light info container">Information</h3>
+
+
+              <div class=" container list mt-md-5">
+              <p>About us</p>
+              <p>Online enquiry</p>
+              <p>Call us</p>
+              <p>General enquiries</p>
+              <p>Booking Conditions</p>
+              <p>Privacy and Policy</p>
+              <p>Refund Policy</p>
+            </div>
+            </div>
+
+              <div class="me-md-5 expe">
+                <h3 class="text-light expe-footer container ">Experience</h3>
+
+                <div class="exp-footer container mt-md-5">
+                <p>Experience</p>
+                  <p>Beach</p>
+                  <p>Adventure</p>
+                  <p> Wildlife</p>
+                  <p> Honeymoon</p>
+                  <p>Nature</p>
+                  <p>Party</p>
+                </div>
+              </div>
+
+              <div class="que">
+                <h3 class="text-light expe-footer container ">Have a Questions?</h3>
+
+                <div class="d-flex loc container pe-md-5">
+                  <a class="footer-loc" href=""><i class="bi bi-geo-alt-fill"></i></a>
+                  <p class="loc-p ms-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                </div>
+
+                <div class="d-flex container">
+                  <a class="footer-call" href=""><i class="bi bi-telephone-fill"></i></a>
+                  <p class="text-light ms-4">+2 392 3929 210</p>
+                </div>
+
+                <div class="d-flex container">
+                  <a class="footer-mail" href=""><i class="bi bi-envelope-fill"></i></a>
+                  <p class="text-light ms-4">	info@yourdomain.com</p>
+                </div>
+
+              </div>
+
+          
+           
+         </section>
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="JavaScript/script.js"></script>
+
+</body>
+</html>
