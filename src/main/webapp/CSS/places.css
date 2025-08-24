@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+   
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.main-img{
+    background-image:url(../Images/background/bg_1.jpg);
+    height: 642px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navb{
+    height: 62px;
+    width:100%;
+    background-color: black;
+}
+.adv{
+    font-family: "Poppins", sans-serif;
+}
+.menu-icon{
+    color: #FFFFFF80;
+}
+.menu-icon2{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+
+.menu-name{
+    color: #FFFFFF80;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu-icon i{
+    font-size: 25px;
+}
+.about-name{
+    font-size: 45px;
+    font-family: "Abril Fatface", serif;
+    position: relative;
+    left: 70px;
+    top: 250px;
+}
+.dest-h2{
+    font-family: "Poppins", sans-serif;
+}
+.dest-main{
+    background-color: #F8FAFF;
+    height: 1547px;
+    width: 300%;
+}
+.dist-1{
+    background-image: url(../Images/background/g1.jpg);
+    height: 140px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-2{
+    background-image: url(../Images/background/g2.jpg);
+    height: 140px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-3{
+    background-image: url(../Images/background/g3.jpg);
+    height: 452px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-4{
+    background-image: url(../Images/background/g4.jpg);
+    height: 216px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-5{
+    background-image: url(../Images/background/g5.jpg);
+    height: 216px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-6{
+    background-image: url(../Images/background/g6.jpg);
+    height: 103px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ch-h2,.ve-h2,.au-h2,.ne-h2{
+    padding-top: 70px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.ch-p,.ve-p,.au-p,.ne-p{
+    position: relative;
+    top: -10px;
+    left: 50px;
+}
+.ch-p2,.ve-p2,.au-p2,.ne-p2{
+    position: relative;
+    top: -30px;
+    left: 50px; 
+}
+.br-h2{
+   padding-top:300px;
+   padding-left: 50px;
+   font-family: "Poppins", sans-serif;
+}
+.br-p,.br-p2{
+    position: relative;
+    left: 50px;
+}
+.tu-h2{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.tu-p{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.tu-p2{
+    position: relative;
+    left: 50px;
+}
+.footer{
+    height:1278px;
+    width: 100%px;
+    background-color: #222831;
+}
+.foot-h2{
+    font-family: "Poppins", sans-serif;
+    padding-top: 110px;
+}
+.foot-h3{
+    position: relative;
+    top: 40px;
+   font-size: 18px;
+   position: relative;
+   left: 10px;
+   position: relative;
+   right: 10px;
+   color: gray;
+}
+.info{
+    position: relative;
+    top: 60px;
+}
+.list{
+    position: relative;
+    top: 60px;
+    font-size: 25px;
+}
+.expe-footer{
+    position: relative;
+    top: 70px;
+}
+.exp-footer{
+    position: relative;
+    top: 70px;
+}
+.footer-loc,.footer-call,.footer-mail{
+    color: white;
+}
+.loc{
+    margin-top: 110px; 
+}
+.foot-h3{
+    color: #FFFFFFB3;
+}
+.list{
+    color: #FFFFFFB3; 
+}
+.exp-footer{
+    color: #FFFFFFB3; 
+}
+.loc-p{
+    color: #FFFFFFB3; 
+}
+
+
+@media(min-width:768px){
+    .menu-icon2{
+        margin-left: 530px;
+    }
+    .about-name{
+        font-size: 35px;
+        position: relative;
+        left: 170px;
+        top: 250px;
+    }
+    .dest-main{
+        height: 2404px;
+        width: 768px;
+    }
+    .dist-1,.dist-2{
+        height: 320px;
+        width: 570px;
+    }
+    .dist-3{
+        height: 670px;
+        width: 370px;
+    }
+    .dist-4,.dist-5{
+        height: 320px;
+        width: 370px;
+    }
+    .dist-6{
+        height: 274px;
+        width: 661px;
+    }
+    .ch-h2,.ve-h2,.au-h2,.ne-h2{
+        padding-top: 200px;
+    }
+    .br-h2{
+        padding-top: 500px; 
+    }
+    .tu-h2{
+        padding-top: 150px; 
+    }
+    .footer{
+        height: 500px;
+    }
+    .foot-h2,.info,.expe-footer{
+        font-size: 20px;
+    }
+    .foot-h2{
+        position: relative;
+        top: -50px;
+    }
+    .foot-h3{
+        position: relative;
+        top: -10px;
+        padding-right: 90px;
+    }
+    .que{
+        position: relative;
+        left: -20px;
+    }
+}
+
+
+@media(min-width:992px){
+    .navb{
+     background-color: transparent;
+    }
+    .nav-menu{
+     position: relative;
+     left: 550px;
+     padding-top: 40px;
+    }
+     .adv{
+        margin-top: 25px;
+        margin-left: 150px;
+       }
+       .main-img{
+        height: 750px;
+       }
+       .about-name{
+        font-size: 85px;
+        position: relative;
+        left: 570px;
+        top: 250px;
+    }
+    .dest-main{
+        height: 1226px;
+        width: 1524px;
+    }
+    .dest-h2{
+        position: relative;
+        left: 470px;
+    }
+    .dist-1{
+        position: relative;
+        top: 25px;
+        left: 40px;
+    }
+    .dist-2{
+        position: relative;
+        top: 50px;
+        left: 60px;
+    }
+    .dist-3{
+        position: relative;
+        top: 30px;
+        left: 40px; 
+    }
+    .dist-4{
+        position: relative;
+        top: 30px;
+        left: 60px; 
+    }
+    .dist-5{
+        position: relative;
+        top: 30px;
+        left: 80px; 
+    }
+    .dist-6{
+        position: relative;
+        top: -310px;
+        left: 440px;
+    }
+    .dist-6{
+        height: 310px;
+        width: 770px;
+    }
+    .foot-h3{
+        padding-right: 600px;
+    }
+    .infn{
+        position: relative;
+        right: 300px;
+    }
+    .advn{
+        position: relative;
+        left: 180px;
+    }
+    .expe{
+        position: relative;
+        right: 250px;
+    }
+    .que{
+        position: relative;
+        left: -170px;
+    }
+    .footer{
+        height: 600px;
+    }
+    
+    }

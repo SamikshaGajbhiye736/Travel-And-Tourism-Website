@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+   
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.main-img{
+    background-image:url(../Images/background/bg_1.jpg);
+    height: 642px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navb{
+    height: 62px;
+    width:100%;
+    background-color: black;
+}
+.adv{
+    font-family: "Poppins", sans-serif;
+}
+.menu-icon{
+    color: #FFFFFF80;
+}
+.menu-icon2{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+
+.menu-name{
+    color: #FFFFFF80;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu-icon i{
+    font-size: 25px;
+}
+
+.main-h1{
+    margin-top: 150px;
+    font-family: "Abril Fatface", serif;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+}
+.main-h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: -15px;
+    text-align: center;
+}
+.main-p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff89;
+}
+.graybox{
+    height: 953px;
+    width:100%;
+    background-color: #F8FAFF;
+}
+.one,.two,.three{
+    color: #F8CD67;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.one-p,.two-p,.three-p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    font-family: "Poppins", sans-serif;
+}
+.gray-1{
+    padding-top: 110px;
+}
+.gray-2,.gray-3{
+    padding-top: 50px;
+}
+.vac-h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 30px;
+}
+.vac-1{
+    background-image: url(../Images/background/destination-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 290px;
+}
+.vac-2{
+    background-image: url(../Images/background/helena-lopes-PGnqT0rXWLs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 290px;
+}
+.vac-3{
+    background-image: url(../Images/background/destination-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 290px;
+}
+.vac-div1,.vac-div2,.vac-div3{
+    height: 82px;
+    width: 270px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+}
+.group{
+    font-size: 30px;
+    font-family: "Abril Fatface", serif;
+}
+.travel-img1{
+    height: 300px;
+    width: 310px;
+    object-fit: cover;
+}
+.travelimg{
+    margin-top: 130px;
+}
+.travel-h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 28px; 
+}
+.travel-p{
+    color: #928b8b;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.blue-main{
+    height: 1030px;
+    width: 100%;
+    background-color: #F8FAFF;
+}
+.blue-1 a i{
+    color: #F9BE37;
+    font-size: 50px;
+    margin-top: 100px;
+}
+.round a i{
+    color: #F9BE37;
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+}
+.compass a i{
+    color: #F9BE37;
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+}
+.map a i{
+    color: #F9BE37;
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+}
+.blue-p1,.blue-p2,.blue-p3,.blue-p4{
+    font-family: "Poppins", sans-serif;
+    color: #9a9898;
+}
+.blue-h1,.blue-h2,.blue-h3,.blue-h4{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+.blue-h2{
+    margin-top: 40px;
+}
+.blue-h3{
+    margin-top: 40px;
+}
+.blue-h4{
+    margin-top: 40px;
+}
+.blue-p1,.blue-p2,.blue-p3,.blue-p4{
+    margin-top: 20px;
+}
+.dest-h2{
+    font-family: "Poppins", sans-serif;
+}
+.dest-main{
+    background-color: #F8FAFF;
+    height: 1547px;
+    width: 300%;
+}
+.dist-1{
+    background-image: url(../Images/background/g1.jpg);
+    height: 140px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-2{
+    background-image: url(../Images/background/g2.jpg);
+    height: 140px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-3{
+    background-image: url(../Images/background/g3.jgp);
+    height: 452px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-4{
+    background-image: url(../Images/background/g4.jpg);
+    height: 216px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-5{
+    background-image: url(../Images/background/g5.jpg);
+    height: 216px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dist-6{
+    background-image: url(../Images/background/g6.jpg);
+    height: 103px;
+    width: 280px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ch-h2,.ve-h2,.au-h2,.ne-h2{
+    padding-top: 70px;
+    padding-left: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.ch-p,.ve-p,.au-p,.ne-p{
+    position: relative;
+    top: -10px;
+    left: 50px;
+}
+.ch-p2,.ve-p2,.au-p2,.ne-p2{
+    position: relative;
+    top: -30px;
+    left: 50px; 
+}
+.br-h2{
+   padding-top:300px;
+   padding-left: 50px;
+   font-family: "Poppins", sans-serif;
+}
+.br-p,.br-p2{
+    position: relative;
+    left: 50px;
+}
+.tu-h2{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.tu-p{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.tu-p2{
+    position: relative;
+    left: 50px;
+}
+.pack-main{
+    background-color: #F8FAFF;
+    height: 3947px;
+    width: 300%;
+    position: relative;
+    top: -50px; 
+}
+.pack-h2{
+    font-family: "Poppins", sans-serif;
+}
+.pack-img1{
+    height: 232px;
+    width: 260px;
+}
+.pack-1{
+    height: 363px;
+    width: 260px;
+    background-color: white;
+}
+.pack-flex{
+    position: relative;
+    left: -30px;
+}
+.star{
+    position: relative;
+    top: -23px;
+    left: 10px;
+}
+.star-1{
+    color: #FFDF00;
+}
+.review{
+    position: relative;
+    top: 25px;
+    right: 100px;
+}
+.button{
+    height: 35px;
+    width: 110px;
+    background-color: #00D8FF;
+    border: navajowhite;
+}
+.footer{
+    height:1278px;
+    width: 100%px;
+    background-color: #222831;
+}
+.foot-h2{
+    font-family: "Poppins", sans-serif;
+    padding-top: 110px;
+}
+.foot-h3{
+    position: relative;
+    top: 40px;
+   font-size: 18px;
+   position: relative;
+   left: 10px;
+   position: relative;
+   right: 10px;
+   color: gray;
+}
+.info{
+    position: relative;
+    top: 60px;
+}
+.list{
+    position: relative;
+    top: 60px;
+    font-size: 25px;
+}
+.expe-footer{
+    position: relative;
+    top: 70px;
+}
+.exp-footer{
+    position: relative;
+    top: 70px;
+}
+.footer-loc,.footer-call,.footer-mail{
+    color: white;
+}
+.loc{
+    margin-top: 110px; 
+}
+.foot-h3{
+    color: #FFFFFFB3;
+}
+.list{
+    color: #FFFFFFB3; 
+}
+.exp-footer{
+    color: #FFFFFFB3; 
+}
+.loc-p{
+    color: #FFFFFFB3; 
+}
+
+.hotel-img1{
+    height: 300px;
+    width: 290px;
+}
+.hotel-box1{
+    height: 256px;
+    width: 290px;
+    background-color: white;
+}
+.orleans{
+    font-family: "Poppins", sans-serif;
+}
+.star-2{
+    color: #F8CD67;
+}
+
+
+
+
+@media(min-width:768px){
+    .menu-icon2{
+        margin-left: 530px;
+    }
+    .main-h1{
+        position: relative;
+        right: 260px;
+    }
+    .main-h2{
+        position: relative;
+        right: 223px;
+    }
+    .main-p{
+        position: relative;
+        right: 35px;
+        line-height: 1.5;
+    }
+    .flight{
+        height: 54px;
+        width: 109px;
+        background-color: #F9BE37;
+    }
+    .flight-1{
+        margin-left: 210px;
+        margin-top: 100px;
+        font-family: "Poppins", sans-serif;
+        font-size: 19px;
+    }
+    .hotel,.rent{
+        font-family: "Poppins", sans-serif;
+        font-size: 19px;
+    }
+    .main-img{
+        height: 660px;
+    }
+    .white-box{
+        height: 181px;
+        width: 683px;
+        background-color: white;
+        position: relative;
+        top: -147px;
+        left: 85px;
+    }
+    .white-1,.white-2,.white-3,.white-4,.white-5,.search{
+        font-family: "Poppins", sans-serif; 
+    }
+    .white-5{
+        position: relative;
+        right: 14px;
+    }
+    .white-3{
+        margin-left: 5px;
+    }
+    .white-2{
+        margin-left: 14px;
+    }
+    .white-4{
+        margin-left: -25px;
+    }
+    .white-5{
+        margin-left: -10px;
+    }
+    .whitebox-1,.whitebox-2,.whitebox-3,.whitebox-4,.whitebox-5{
+        height: 52px;
+        width: 72px;
+        border: 1px solid rgb(172, 167, 167);
+    }
+    .whitebox-2{
+        position: relative;
+        left: 14px;
+    }
+    .whitebox-3{
+        position: relative;
+        left: 20px; 
+    }
+    .whitebox-4{
+        margin-top: 30px;
+    }
+    .whitebox-5{
+        margin-left: -13px;
+    }
+    .box-icon{
+        color: #F9BE37;
+    }
+    .yellowbox{
+        height: 52px;
+        width: 72px;
+        background-color: #F9BE37;
+        position: relative;
+        top: 30px;
+        left: 20px;
+    }
+    .graybox{
+        height: 429px;
+        margin-top: -130px;
+    }
+    .gray-1{
+        margin-top: -60px;
+    }
+    .vac-1,.vac-2,.vac-3{
+        height: 300px;
+        width: 209px;
+    }
+    .vac-h2{
+        font-size: 40px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+   .vac-div1,.vac-div2,.vac-div3{
+        height: 124px;
+        width: 189px;
+        position: relative;
+        top: 165px;
+    }
+    .travel-img1{
+        height: 844px;
+        width: 384px;
+    }
+    .travel-h2{
+        margin-top: 180px;
+        font-size: 45px;
+        padding-left: 20px;
+        padding-right: 80px;
+        line-height: 1.3;
+    }
+    .travel-p{
+        font-size: 16px;
+        margin-left: 25px;
+        margin-right: 50px;
+        line-height: 1.7;
+    }
+    .blue-main{
+        height: 540px;
+        width: 100%;
+        position: relative;
+        top: -50px;
+    }
+    .blue-1{
+        padding-left: 60px;
+    }
+    .round,.compass,.map{
+        padding-right: 50px;
+        margin-top: 53px;
+    }
+    .dest-main{
+        height: 2404px;
+        width: 768px;
+    }
+    .dist-1,.dist-2{
+        height: 320px;
+        width: 570px;
+    }
+    .dist-3{
+        height: 670px;
+        width: 370px;
+    }
+    .dist-4,.dist-5{
+        height: 320px;
+        width: 370px;
+    }
+    .dist-6{
+        height: 274px;
+        width: 661px;
+    }
+    .ch-h2,.ve-h2,.au-h2,.ne-h2{
+        padding-top: 200px;
+    }
+    .br-h2{
+        padding-top: 500px; 
+    }
+    .tu-h2{
+        padding-top: 150px; 
+    }
+    .pack-img1{
+        height: 364px;
+        width: 450px;
+    }
+    .pack-1{
+        height: 313px;
+        width: 450px;
+    }
+    .five{
+        position: relative;
+        left: 50px;
+    }
+    .star{
+        position: relative;
+        top: 0px;
+    }
+    .pack-main{
+        height:4454px;
+    }
+    .package{
+        position: relative;
+        left: 140px;
+    }
+    .pack-h2{
+        position: relative;
+        top: 50px;
+        left: 200px;
+    }
+    .footer{
+        height: 500px;
+    }
+    .foot-h2,.info,.expe-footer{
+        font-size: 20px;
+    }
+    .foot-h2{
+        position: relative;
+        top: -50px;
+    }
+    .foot-h3{
+        position: relative;
+        top: -10px;
+        padding-right: 90px;
+    }
+    .que{
+        position: relative;
+        left: -20px;
+    }
+    .hotel-img1{
+        height: 300px;
+        width: 354px;
+    }
+    .hotel-box1{
+        height: 227px;
+        width: 354px;
+        position: relative;
+        right: 80px;
+    }
+    .hot-2{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        left: 80px;
+    }
+
+}
+
+@media(min-width:992px){
+   .navb{
+    background-color: transparent;
+   }
+   .nav-menu{
+   
+    left: 400px;
+    padding-top: 40px;
+   }
+   .adv{
+    margin-top: 25px;
+    margin-left: 150px;
+   }
+   .main-h1{
+    position: relative;
+    right: 420px;
+    top:10px;
+    font-size: 90px;
+   }
+   .main-h2{
+    position: relative;
+    right: 350px;
+    top:-10px;
+    font-size: 90px;
+   }
+   .main-p{
+    position: relative;
+    left: -277px;
+    top: -40px;
+   }
+   .white-box{
+    height: 170px;
+    width: 1385px;
+    position: relative;
+    left: 135px;
+    top: -160px;
+   }
+   .main-img{
+    height: 730px;
+   }
+   .hotel,.rent{
+    color: rgb(195, 186, 186);
+   }
+   .flight{
+    font-size: 20px;
+   }
+   .flight-1{
+    position: relative;
+    left: 450px;
+    top:-50px;
+   }
+   .whitebox-1,.whitebox-2,.whitebox-3,.whitebox-4,.whitebox-5,.yellowbox{
+    height: 52px;
+    width: 170px;
+   }
+   .white-1,.white-2,.white-3,.white-4,.white-5{
+    margin-top: 10px;
+   }
+   .white-1{
+    margin-left: 10px;
+   }
+   .white-2,.white-3{
+    margin-left: 120px;
+   }
+   .white-4{
+    margin-left: 100px;
+   }
+   .white-5{
+    margin-left: 100px;
+   }
+   .whitebox-2{
+    position: relative;
+    left: 30px;
+   }
+   .whitebox-3{
+    position: relative;
+    left: 50px;
+   }
+   .whitebox-4{
+    margin-top: 0px;
+    position: relative;
+    left: 50px;
+   }
+   .whitebox-5{
+    position: relative;
+    left: 50px;
+   }
+   
+   .yellowbox{
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.graybox{
+    margin-top:-170px;
+}
+.gray-1{
+    margin-left: 200px;
+    margin-right: 30px;
+   margin-top: -30px;
+}
+.gray-2{
+    margin-left: 100px;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+.gray-3{
+    margin-right: 180px;
+    margin-top: 30px;
+}
+.vac-h2{
+    font-size: 45px;
+}
+.vac-1,.vac-2,.vac-3{
+    height: 290px;
+    width: 350px;
+}
+.vacation{
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.vac-div1,.vac-div2,.vac-div3{
+    height: 82px;
+    width: 329px;
+    position: relative;
+    top: 200px;
+}
+.travel-img1{
+    height:505px;
+    width: 762px;
+}
+.travel-h2{
+    margin-top: 180px;
+    margin-left: 40px;
+}
+.travel-p{
+    margin-left: 60px;
+    margin-right: 150px;
+    line-height: 1.8;
+}
+.blue-1{
+    padding-left: 180px;
+    padding-right: 50px;
+}
+.round{
+    padding-right: 150px;
+}
+.compass{
+    position: relative;
+    right: 100px;
+    margin-right: 50px;
+}
+.map{
+    position: relative;
+    right: 160px;
+}
+.blue-main{
+  height: 450px;
+}
+.dest-main{
+    height: 1226px;
+    width: 1524px;
+}
+.dest-h2{
+    position: relative;
+    left: 470px;
+}
+.dist-1{
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+.dist-2{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.dist-3{
+    position: relative;
+    top: 30px;
+    left: 40px; 
+}
+.dist-4{
+    position: relative;
+    top: 30px;
+    left: 60px; 
+}
+.dist-5{
+    position: relative;
+    top: 30px;
+    left: 80px; 
+}
+.dist-6{
+    position: relative;
+    top: -310px;
+    left: 440px;
+}
+.dist-6{
+    height: 310px;
+    width: 770px;
+}
+.pack-img1{
+    height: 279px;
+    width: 345px;
+}
+.pack-1{
+    height: 343px;
+    width: 345px;
+}
+.pack-h2{
+    position: relative;
+    left: 550px;
+}
+.package{
+    position: relative;
+    left: 170px;
+}
+.pack-main{
+    height: 1500px;
+}
+.advn{
+    position: relative;
+    left: 180px;
+}
+.foot-h3{
+    padding-right: 600px;
+}
+.infn{
+    position: relative;
+    right: 300px;
+}
+.expe{
+    position: relative;
+    right: 250px;
+}
+.que{
+    position: relative;
+    left: -170px;
+}
+.footer{
+    height: 600Fpx;
+}
+
+ .hot-2{
+        display: flex;
+}
+
+
+.signin a {
+    font-size: 14px;
+    /* border: 1px solid var(--bgColor); */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--bgColor);
+  }
+  .signin a:hover {
+    background-color: var(--bgColor2);
+    color: var(--bgColor);
+    border: none;
+    outline: none;
+  }
+  #btn2 {
+    border: none;
+    outline: none;
+    background-color:#F9BE37;
+    color:white;
+  }
+  #btn2:hover {
+    background:rgb(15, 15, 93);
+    color:white;
+    border: 1px solid white;
+  }
+  .login-btn{
+    height: 37px;
+    width: 100px;
+    margin-top: 32px;
+    margin-left:30px;
+    
+  }
+  .log{
+    margin-left:430px;
+    margin-top: 32px;
+
+  }
+
+}
