@@ -46,4 +46,44 @@ String password = "your-password";
 6. Open your browser and go to:
 http://localhost:8080/travel-tourism
 
+## 📸 Screenshots
 
+### 🏠 Homepage
+![Homepage](output/1.png)
+
+### 📦 About page
+![About page](output/4.png)
+
+### 🛎️ Destinations Page
+![estinations Page](output/5.png)
+
+### 👤 Hotels Page
+![Hotels Page](output/6.png)
+
+### 👩‍💼 Contact Page
+![Contact Page](output/7.png)
+
+### 📱 Sign Up Page
+![Sign Up Page](output/10.png)
+
+### 📱 Login Page
+![Login Page](output/8.png)
+
+### 📱 Admin Login Page
+![Admin Login Page](output/9.png)
+
+### 📱 Package Page
+![Package Page](output/11.png)
+
+### 📱 Payment Page
+![Payment Page](output/12.png)
+
+### 📱 Successful Page
+![Successful](output/13.png)
+
+.
+
+👨‍💻 Author
+
+Samiksha Gajbhiye
+GitHub: @SamikshaGajbhiye736
